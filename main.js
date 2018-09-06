@@ -1,36 +1,35 @@
 $(() => {
    
    
-    $('#startButton').click(function () {
-        playerOne = prompt("Player one, please enter your name")
-        playerTwo = prompt("Player two, please enter your name")
-    })
-    // let currentPlayer = playerOne
+    // $('#startButton').click(function () {
+    //     playerOne = prompt("Player one, please enter your name")
+    //     playerTwo = prompt("Player two, please enter your name")
+    // })
+    // let players = [playerOne, playerTwo]
+   
     let playerOneScore = 0
-    let playerTwoScore = 0
-
-    // const whoseTurn = () => {
-    //     if (currentPlayer === player) {
-    //         alert(playerOne + ",it's your turn")
-    //     } else {
-    //         alert(playerTwo + ",its your turn")
-    //     }
-    // }
-    // whoseTurn()
-
-    // const currentPlayerScore = () => {
-
-    // }
-
-    
+    const winningScore = 400
+    const losingScore = -399
+    // let playerTwoScore = 0
+      
 
     const updateScore = () => {
-        // if (currentPlayer === playerOne) {
-        $('#playerOneScore').html(playerOneScore)
-        // } else {
-        $('#playerTwoScore').html(playerTwoScore)
-        // }
+        $('#playerOneScore').html('Points:' + " " + playerOneScore)
+        // $('#playerTwoScore').hmtl(playerTwoScore)
     }
+    const winner = () => {
+        if (playerOneScore >= winningScore) {
+            alert("You WIN!")
+        } else if (playerOneScore < winningScore) {
+            alert("You LOSE! Try again.") 
+        }
+    } 
+    // const checkWinner = () => {
+    //     if ($(':disabled')) {
+    //         winner()
+    //     }
+    // }
+    
     
     $('#oneOne').click(function () {
         // prompt pops up when user clicks on button
@@ -51,18 +50,14 @@ $(() => {
             // subtract point amount
             playerOneScore -= 100
         }
-        // if (currentPlayer === playerOne) {
-        //     playerOneScore += 100
-        // } else {
-        //     playerTwoScore 
-        // }
-
         // Hide button
         $('#oneOne').prop('disabled', true)
         $('#oneOne').css("color", "transparent")
+        // currentPlayer = false
 
         // update score
         updateScore()
+        // winner()
     })
 
     $('#oneTwo').click(function () {
@@ -72,16 +67,17 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerTwoScore += 100
+            playerOneScore += 100
         } else {
             alert("Sorry, that's INCORRECT")
-            playerTwoScore -= 100
+            playerOneScore -= 100
         }
 
         $('#oneTwo').prop('disabled', true)
         $('#oneTwo').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#oneThree').click(function () {
@@ -101,6 +97,7 @@ $(() => {
         $('#oneThree').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#oneFour').click(function () {
@@ -120,6 +117,7 @@ $(() => {
         $('#oneFour').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#oneFive').click(function () {
@@ -139,6 +137,7 @@ $(() => {
         $('#oneFive').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
     // row 2
     $('#twoOne').click(function () {
@@ -158,6 +157,7 @@ $(() => {
         $('#twoOne').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#twoTwo').click(function () {
@@ -175,8 +175,9 @@ $(() => {
 
         $('#twoTwo').prop('disabled', true)
         $('#twoTwo').css("color", "transparent")
-
+        
         updateScore()
+        // winner()
     })
 
     $('#twoThree').click(function () {
@@ -196,6 +197,7 @@ $(() => {
         $('#twoThree').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#twoFour').click(function () {
@@ -215,6 +217,7 @@ $(() => {
         $('#twoFour').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#twoFive').click(function () {
@@ -234,6 +237,7 @@ $(() => {
         $('#twoFive').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     // row 3
@@ -254,6 +258,7 @@ $(() => {
         $('#threeOne').css("color", "transparent")
 
         updateScore()
+        // winner()
 
     })
 
@@ -274,6 +279,7 @@ $(() => {
         $('#threeTwo').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#threeThree').click(function () {
@@ -293,6 +299,7 @@ $(() => {
         $('#threeThree').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#threeFour').click(function () {
@@ -312,6 +319,7 @@ $(() => {
         $('#threeFour').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#threeFive').click(function () {
@@ -331,6 +339,7 @@ $(() => {
         $('#threeFive').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     // row 4
@@ -351,6 +360,7 @@ $(() => {
         $('#fourOne').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#fourTwo').click(function () {
@@ -370,6 +380,7 @@ $(() => {
         $('#fourTwo').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#fourThree').click(function () {
@@ -389,6 +400,7 @@ $(() => {
         $('#fourThree').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#fourFour').click(function () {
@@ -408,6 +420,7 @@ $(() => {
         $('#fourFour').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#fourFive').click(function () {
@@ -427,6 +440,7 @@ $(() => {
         $('#fourFive').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     // row five
@@ -447,6 +461,7 @@ $(() => {
         $('#fiveOne').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#fiveTwo').click(function () {
@@ -466,6 +481,7 @@ $(() => {
         $('#fiveTwo').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#fiveThree').click(function () {
@@ -485,6 +501,7 @@ $(() => {
         $('#fiveThree').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#fiveFour').click(function () {
@@ -504,6 +521,7 @@ $(() => {
         $('#fiveFour').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
 
     $('#fiveFive').click(function () {
@@ -519,21 +537,21 @@ $(() => {
             playerOneScore -= 500
         }
 
-        $('#fiveFive').prop('disabled', true)
+        $('#fiveFive').prop("disabled", true)
         $('#fiveFive').css("color", "transparent")
 
         updateScore()
+        // winner()
     })
-
-    // const winner = () => {
-    //     if (playerOneScore > playerTwoScore) {
-    //         alert("PLAYER ONE you WIN")
-    //     } else {
-    //         alert("PLAYER ONE you WIN") 
-    //     }
-    // } 
+  
+    $('#finishButton').click(function () {
+        winner()
+    })
     
-    // winner()
+    
+
+    
+
 
 
     // Game restart
@@ -541,17 +559,18 @@ $(() => {
         // Reset score for each player
         $('#restartButton').click(function () {
             playerOneScore = 0
-            playerTwoScore = 0
 
-            $('#playerOneScore').html("")
-            $('#playerTwoScore').html("")
-
-            // Enable all buttons
-            $('.question').prop('disabled', false)
+            // Enable all question buttons
+            $('.questions').prop("disabled", false)
             $('.questions').css("color", "yellow")
+            updateScore()
+            
         })
+        
     }
+   
     restartGame()
+   
 
 
 
