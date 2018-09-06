@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+<body>
+
+    <h1><img src="jeopardy_logo.jpg" alt="jeopardy-logo"></h1>
+    <div class="scoreboard">
+        <h3>Scoreboard</h3>
+        <div id="playerOne">Player One:</div><div id="playerOneScore"></div>
+        <br>
+        <div id="playerTwo">Player Two:</div><div id="playerTwoScore"></div>
+ 
+    </div>
+
+
+
+    <div class='startRestart'>
+        <button type="button" id="startButton">Start</button>
+        <button type="button" id="restartButton">Restart</button>
+    </div>
+
+   
+        <table>
+            <tr class="categories">    
+                <td><button type="button" class="categories" >Automotive</button></td>
+                <td><button type="button" class="categories" >Sports</button></td>
+                <td><button type="button" class="categories" >Geography</button></td>
+                <td><button type="button" class="categories" >Movies</button></td>
+                <td><button type="button" class="categories" >Food</button></td>
+            </tr>    
+           <!-- row one -->
+            <tr>
+                <td><button type="button" class="questions" id="oneOne">100</button></td>
+                <td><button type="button" class="questions" id="oneTwo">100</button></td>
+                <td><button type="button" class="questions" id="oneThree">100</button></td>
+                <td><button type="button" class="questions" id="oneFour">100</button></td>
+                <td><button type="button" class="questions" id="oneFive">100</button></td>
+            </tr>       
+            <!-- row two -->
+            <tr>
+                <td><button type="button" class="questions" id="twoOne">200</button></td>
+                <td><button type="button" class="questions" id="twoTwo">200</button></td>
+                <td><button type="button" class="questions" id="twoThree">200</button></td>
+                <td><button type="button" class="questions" id="twoFour">200</button></td>
+                <td><button type="button" class="questions" id="twoFive">200</button></td>
+            </tr>
+            <!-- row three -->
+            <tr>
+                <td><button type="button" class="questions" id="threeOne">300</button></td>
+                <td><button type="button" class="questions" id="threeTwo">300</button></td>
+                <td><button type="button" class="questions" id="threeThree">300</button></td>
+                <td><button type="button" class="questions" id="threeFour">300</button></td>
+                <td><button type="button" class="questions" id="threeFive">300</button></td>
+            </tr>
+            <!-- row four -->
+            <tr>
+                <td><button type="button" class="questions" id="fourOne">400</button></td>
+                <td><button type="button" class="questions" id="fourTwo">400</button></td>
+                <td><button type="button" class="questions" id="fourThree">400</button></td>
+                <td><button type="button" class="questions" id="fourFour">400</button></td>
+                <td><button type="button" class="questions" id="fourFive">400</button></td>
+            </tr>
+            <!-- row five -->
+            <tr>
+                <td><button type="button" class="questions" id="fiveOne">500</button></td>
+                <td><button type="button" class="questions" id="fiveTwo">500</button></td>
+                <td><button type="button" class="questions" id="fiveThree">500</button></td>
+                <td><button type="button" class="questions" id="fiveFour">500</button></td>
+                <td><button type="button" class="questions" id="fiveFive">500</button></td>
+            </tr>
+        </table>
+       
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
