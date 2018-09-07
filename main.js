@@ -1,21 +1,11 @@
 $(() => {
    
-   
-    // $('#startButton').click(function () {
-    //     playerOne = prompt("Player one, please enter your name")
-    //     playerTwo = prompt("Player two, please enter your name")
-    // })
-    // let players = [playerOne, playerTwo]
-   
     let playerOneScore = 0
-    const winningScore = 400
-    const losingScore = -399
-    // let playerTwoScore = 0
-      
+    const winningScore = 2500
+    
 
     const updateScore = () => {
         $('#playerOneScore').html('Points:' + " " + playerOneScore)
-        // $('#playerTwoScore').hmtl(playerTwoScore)
     }
     const winner = () => {
         if (playerOneScore >= winningScore) {
@@ -24,12 +14,6 @@ $(() => {
             alert("You LOSE! Try again.") 
         }
     } 
-    // const checkWinner = () => {
-    //     if ($(':disabled')) {
-    //         winner()
-    //     }
-    // }
-    
     
     $('#oneOne').click(function () {
         // prompt pops up when user clicks on button
@@ -57,7 +41,6 @@ $(() => {
 
         // update score
         updateScore()
-        // winner()
     })
 
     $('#oneTwo').click(function () {
@@ -77,7 +60,6 @@ $(() => {
         $('#oneTwo').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#oneThree').click(function () {
@@ -97,7 +79,6 @@ $(() => {
         $('#oneThree').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#oneFour').click(function () {
@@ -117,7 +98,6 @@ $(() => {
         $('#oneFour').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#oneFive').click(function () {
@@ -137,7 +117,6 @@ $(() => {
         $('#oneFive').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
     // row 2
     $('#twoOne').click(function () {
@@ -157,7 +136,6 @@ $(() => {
         $('#twoOne').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#twoTwo').click(function () {
@@ -177,7 +155,6 @@ $(() => {
         $('#twoTwo').css("color", "transparent")
         
         updateScore()
-        // winner()
     })
 
     $('#twoThree').click(function () {
@@ -197,7 +174,6 @@ $(() => {
         $('#twoThree').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#twoFour').click(function () {
@@ -217,7 +193,6 @@ $(() => {
         $('#twoFour').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#twoFive').click(function () {
@@ -237,7 +212,6 @@ $(() => {
         $('#twoFive').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     // row 3
@@ -258,7 +232,6 @@ $(() => {
         $('#threeOne').css("color", "transparent")
 
         updateScore()
-        // winner()
 
     })
 
@@ -279,7 +252,6 @@ $(() => {
         $('#threeTwo').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#threeThree').click(function () {
@@ -299,7 +271,6 @@ $(() => {
         $('#threeThree').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#threeFour').click(function () {
@@ -319,7 +290,6 @@ $(() => {
         $('#threeFour').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#threeFive').click(function () {
@@ -339,7 +309,6 @@ $(() => {
         $('#threeFive').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     // row 4
@@ -360,7 +329,6 @@ $(() => {
         $('#fourOne').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#fourTwo').click(function () {
@@ -380,7 +348,6 @@ $(() => {
         $('#fourTwo').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#fourThree').click(function () {
@@ -400,7 +367,6 @@ $(() => {
         $('#fourThree').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#fourFour').click(function () {
@@ -420,7 +386,6 @@ $(() => {
         $('#fourFour').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#fourFive').click(function () {
@@ -440,7 +405,6 @@ $(() => {
         $('#fourFive').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     // row five
@@ -461,7 +425,6 @@ $(() => {
         $('#fiveOne').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#fiveTwo').click(function () {
@@ -481,7 +444,6 @@ $(() => {
         $('#fiveTwo').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#fiveThree').click(function () {
@@ -501,7 +463,6 @@ $(() => {
         $('#fiveThree').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#fiveFour').click(function () {
@@ -521,7 +482,6 @@ $(() => {
         $('#fiveFour').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
 
     $('#fiveFive').click(function () {
@@ -541,7 +501,6 @@ $(() => {
         $('#fiveFive').css("color", "transparent")
 
         updateScore()
-        // winner()
     })
   
     $('#finishButton').click(function () {

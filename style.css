@@ -19,8 +19,6 @@ h3 {
     text-align:center;
 }
 
-
-
 .scoreboard {
     font-size: 24px;
     font-family: 'Fjalla One', sans-serif;
@@ -76,6 +74,16 @@ button {
     float:right;
     margin-right: 70px;
     margin-top: 20px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+p {
+    color: white;
+    font-size: 22px;
+    margin-left: 20px;
+
 }
 
 
