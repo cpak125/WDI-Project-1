@@ -7,6 +7,7 @@ button {
    border-radius: 8px;
    font-family: 'Space Mono', monospace;
    color: gold;
+   font-weight: 800;
 }
 
 h1 {
