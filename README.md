@@ -4,10 +4,10 @@
 
 For project #1, I created a game of Jeopardy.
 
-Once the page loads, the player can begin playing immediately. The player starts off by selecting a question represented by its point value. Once a question has been selected a prompt opens up with the corresponding question and list of answers to choose from. The player inputs an answer represented by a letter "A", "B", "C" or "D" which is then followed by an alert notifying whether the question was answerd correctly or incorrectly. After each question is answered that particular question is disabled and the scoreboard updates accordingly. The player wins if he/she has at least 2,500 points by the end of the game. Once all the questions have been answered, the player can restart the game and all the questions become enabled.
+Once the page loads, the player can begin playing immediately. The player starts off by selecting a question represented by its point value. Once a question has been selected a prompt opens up with the corresponding question and list of answers to choose from. The player inputs an answer represented by a letter "A", "B", "C" or "D" which is then followed by an alert notifying whether the question was answerd correctly or incorrectly. After answering a question that question becomes disabled and the scoreboard updates accordingly. The player wins if he/she has at least 2,500 points by the end of the game. Once all the questions have been answered, the player can restart the game and all the questions become enabled.
 
 
-**Live** **Site**: 
+**Live** **Site**:[](http://quizzical-mirzakhani-03da7d.netlify.com/) 
 ## Technologies Used
 
 1. Languages - HTML5, CSS, Javascript, jQuery
