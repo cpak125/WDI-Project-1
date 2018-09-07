@@ -8,7 +8,7 @@ Once the page loads, the player can begin playing immediately. The player starts
 
 
 **Live** **Site**:
-(http://quizzical-mirzakhani-03da7d.netlify.com/) 
+http://quizzical-mirzakhani-03da7d.netlify.com/ 
 
 ## Technologies Used
 
