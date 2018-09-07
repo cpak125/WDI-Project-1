@@ -6,7 +6,7 @@ button {
    border: 4px solid black;
    border-radius: 8px;
    font-family: 'Space Mono', monospace;
-   color: yellow;
+   color: gold;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h3 {
     margin-top: 35px;
     width: 25%;
     text-align: center;
-    color: yellow;
+    color: gold;
     border: 6px solid black;  
 }
     
@@ -51,7 +51,7 @@ body {
 .categories {
     font-size: 33px;
     height: 70px;
-    color: yellow;
+    color: gold;
     background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
 }
 
