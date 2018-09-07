@@ -24,7 +24,7 @@ Once the page loads, the player can begin playing immediately. The player starts
 
 ## Wireframe
 
-![alt text](https://github.com/cpak125/WDI-Project-1/blob/master/wireframe.jpg)
+![alt text](https://github.com/cpak125/WDI-Project-1/blob/master/images/wireframe.jpg)
 
 ## Future Development
 
