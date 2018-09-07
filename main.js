@@ -355,7 +355,7 @@ $(() => {
     })
 
     $('#fourThree').click(function () {
-        let selection = prompt("The longest river in the world \n\n A. What is the Nile? \n B. What is the Yangtze? \n C. What is the Amazon? \n D. What is the Yellow")
+        let selection = prompt("The U.S. state where Death Valley is located \n\n A. What is Nevada? \n B. What is Utah? \n C. What is Texas? \n D. What is California?")
         let finalAnswer = selection.toUpperCase()
         let answer = 'C'
 
