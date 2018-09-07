@@ -54,6 +54,7 @@ body {
     height: 70px;
     color: gold;
     background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    border: 5px black solid;
 }
 
 #restartButton {
