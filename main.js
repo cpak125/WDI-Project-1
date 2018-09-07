@@ -357,7 +357,7 @@ $(() => {
     $('#fourThree').click(function () {
         let selection = prompt("The U.S. state where Death Valley is located \n\n A. What is Nevada? \n B. What is Utah? \n C. What is Texas? \n D. What is California?")
         let finalAnswer = selection.toUpperCase()
-        let answer = 'C'
+        let answer = 'D'
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")

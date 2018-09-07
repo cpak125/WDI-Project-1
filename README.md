@@ -22,7 +22,7 @@ http://quizzical-mirzakhani-03da7d.netlify.com/
 1. Scoreboard
 2. Restart Button
 3. Finish Button
-4. Hides and Disables questions that have already been answered
+4. Hides and Disables questions that have been answered
 
 ## Wireframe
 
