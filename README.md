@@ -10,7 +10,7 @@ Once the page loads, the player can begin playing immediately. The player starts
 
 1. Languages - HTML5, CSS, Javascript, jQuery
 2. Design - Google Fonts
-3. Project Planning & User Stories - [I'm an inline-style link](https://trello.com/b/3Nr1vPfJ/wdi-project-1)
+3. Project Planning & User Stories - [Trello](https://trello.com/b/3Nr1vPfJ/wdi-project-1)
 4. Visual Studio Code
 
 ## Features
@@ -23,3 +23,10 @@ Once the page loads, the player can begin playing immediately. The player starts
 ## Wireframe
 
 ![alt text](https://github.com/cpak125/WDI-Project-1/blob/master/wireframe.jpg)
+
+## Future Development
+
+1. Add mulitplayer functionality
+2. Make it responsive
+3. Add second round of questions
+4. Add "Final Jeopardy" feature
