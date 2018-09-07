@@ -1,19 +1,26 @@
-
 button {
    width: 220px;
    font-size: 20px;
-   background: blue;    
+   background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);   
+   font-size: 70px;
+   border: 4px solid black;
+   border-radius: 8px;
+   font-family: 'Space Mono', monospace;
+   color: yellow;
 }
+
 h1 {
     margin:auto;
     width: 50%;
     text-align: center;
     perspective:200px;
 }
+
 img {
     width:100%;
     transform:rotateX(40deg);
 }
+
 h3 {
     margin-top: 0;
     text-align:center;
@@ -21,41 +28,32 @@ h3 {
 
 .scoreboard {
     font-size: 24px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Space Mono', monospace;
     margin: auto;
     margin-top: 35px;
     width: 25%;
     text-align: center;
     color: yellow;
-    border: 5px solid black;
-   
+    border: 5px solid black;  
 }
     
 table {
-   margin: auto;
+   margin: auto; 
    width: 50%;
    text-align: center;
-   /* background:black; */
+   background:black;
    
+}
 
-}
 body {
-    background: blue;
-}
-button {
-    /* background:blue; */
-    color: yellow;
-    height: 85px;
-    font-size: 70px;
-    border: 4px solid black;
-    border-radius:8px;
-    font-family:'Fjalla One', sans-serif;
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
 }
 .categories {
-    font-size: 40px;
+    font-size: 33px;
     height: 70px;
+    color: yellow;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
 }
-
 
 #restartButton {
     font-size: 30px;
@@ -66,24 +64,24 @@ button {
     margin-right: 70px;
     margin-bottom: 20px;
 }
+
 #finishButton {
     font-size: 30px;
     height: 50px;
     background: green;
     color: white;
     float:right;
-    margin-right: 70px;
-    margin-top: 20px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    
 }
-.footer {
-    display: flex;
-    justify-content: space-between;
-}
+
 p {
     color: white;
     font-size: 22px;
-    margin-left: 20px;
-
+    margin-left: 70px;
+    margin-right: 60px;
+    font-family: 'Space Mono', monospace;
 }
 
 

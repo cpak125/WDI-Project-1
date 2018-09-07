@@ -1,48 +1,52 @@
 $(() => {
-   
-    let playerOneScore = 0
-    const winningScore = 2500
-    
 
+    let playerScore = 0
+
+    // declare winning score
+    const winningScore = 2500
+
+    // Display the current and updated score to the scoreboard
     const updateScore = () => {
-        $('#playerOneScore').html('Points:' + " " + playerOneScore)
+        $('#playerScore').html('Points:' + " " + playerScore)
     }
+    // set winning conditions
     const winner = () => {
-        if (playerOneScore >= winningScore) {
+        if (playerScore >= winningScore) {
             alert("You WIN!")
-        } else if (playerOneScore < winningScore) {
-            alert("You LOSE! Try again.") 
+        } else if (playerScore < winningScore) {
+            alert("You LOSE! Try again.")
         }
-    } 
-    
+    }
+
     $('#oneOne').click(function () {
         // prompt pops up when user clicks on button
         let selection = prompt("On a speedometer, MPH stands for... \n\n A. What is miles per horsepower? \n B. What is miles per handling? \n C. What is miles per hour? \n D. What is miles per half-second?")
         // make selection to uppercase
         let finalAnswer = selection.toUpperCase()
-        // Check if selection equals answer
-        let answer = 'C'
+
+        // Check if finalAnswer equals answer
         // If correct alert "That's CORRECT"
         // if incorrect alert "Sorry, that's incorrect"
+        let answer = 'C'
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
             //add point amount
-            playerOneScore += 100
+            playerScore += 100
         } else {
             alert("Sorry, that's INCORRECT")
             // subtract point amount
-            playerOneScore -= 100
+            playerScore -= 100
         }
-        // Hide button
+        // Hide and disable button
         $('#oneOne').prop('disabled', true)
         $('#oneOne').css("color", "transparent")
-        // currentPlayer = false
 
         // update score
         updateScore()
     })
 
+    // row one questions
     $('#oneTwo').click(function () {
         let selection = prompt("The stadium currently home to the Atlanta Falcons \n\n A. What is Turner Field? \n B. What is the Georgia Dome ? \n C. What is the Merecedes Benz Stadium? \n D. What is The Bird's Nest?")
         let finalAnswer = selection.toUpperCase()
@@ -50,10 +54,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 100
+            playerScore += 100
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 100
+            playerScore -= 100
         }
 
         $('#oneTwo').prop('disabled', true)
@@ -69,10 +73,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 100
+            playerScore += 100
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 100
+            playerScore -= 100
         }
 
         $('#oneThree').prop('disabled', true)
@@ -88,10 +92,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 100
+            playerScore += 100
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 100
+            playerScore -= 100
         }
 
         $('#oneFour').prop('disabled', true)
@@ -107,10 +111,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 100
+            playerScore += 100
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 100
+            playerScore -= 100
         }
 
         $('#oneFive').prop('disabled', true)
@@ -118,18 +122,18 @@ $(() => {
 
         updateScore()
     })
-    // row 2
+    // row two questions
     $('#twoOne').click(function () {
-        let selection = prompt("The mascot on Geico commercials \n\n A. What is a rabiit\n B. What is a bear?\nC. What is a gecko?\n D. What is a fish?")
+        let selection = prompt("The mascot on Geico commercials \n\n A. What is a rabiit\n B. What is a bear?\n C. What is a gecko?\n D. What is a fish?")
         let finalAnswer = selection.toUpperCase()
         let answer = 'C'
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 200
+            playerScore += 200
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 200
+            playerScore -= 200
         }
 
         $('#twoOne').prop('disabled', true)
@@ -145,15 +149,15 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 200
+            playerScore += 200
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 200
+            playerScore -= 200
         }
 
         $('#twoTwo').prop('disabled', true)
         $('#twoTwo').css("color", "transparent")
-        
+
         updateScore()
     })
 
@@ -164,10 +168,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 200
+            playerScore += 200
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 200
+            playerScore -= 200
         }
 
         $('#twoThree').prop('disabled', true)
@@ -183,10 +187,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 200
+            playerScore += 200
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 200
+            playerScore -= 200
         }
 
         $('#twoFour').prop('disabled', true)
@@ -202,10 +206,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 200
+            playerScore += 200
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 200
+            playerScore -= 200
         }
 
         $('#twoFive').prop('disabled', true)
@@ -214,18 +218,18 @@ $(() => {
         updateScore()
     })
 
-    // row 3
-      $('#threeOne').click(function () {
+    // row three questions
+    $('#threeOne').click(function () {
         let selection = prompt("The first automobile manufacturer to implement the assembly line for the mass production of an entire automobile \n\n A. Who is Chrysler \n B. Who is Ford \n C. Who is Volkswagen \n D. Who is Honda")
         let finalAnswer = selection.toUpperCase()
         let answer = 'B'
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 300
+            playerScore += 300
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 300
+            playerScore -= 300
         }
 
         $('#threeOne').prop('disabled', true)
@@ -242,10 +246,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 300
+            playerScore += 300
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 300
+            playerScore -= 300
         }
 
         $('#threeTwo').prop('disabled', true)
@@ -261,10 +265,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 300
+            playerScore += 300
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 300
+            playerScore -= 300
         }
 
         $('#threeThree').prop('disabled', true)
@@ -280,10 +284,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 300
+            playerScore += 300
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 300
+            playerScore -= 300
         }
 
         $('#threeFour').prop('disabled', true)
@@ -299,10 +303,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 300
+            playerScore += 300
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 300
+            playerScore -= 300
         }
 
         $('#threeFive').prop('disabled', true)
@@ -311,7 +315,7 @@ $(() => {
         updateScore()
     })
 
-    // row 4
+    // row four questions
     $('#fourOne').click(function () {
         let selection = prompt("The country where Porshe originated from  \n\n A. What is England? \n B. What is Sweden? \n C. What is Italy \n D. What is Germany")
         let finalAnswer = selection.toUpperCase()
@@ -319,10 +323,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 400
+            playerScore += 400
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 400
+            playerScore -= 400
         }
 
         $('#fourOne').prop('disabled', true)
@@ -332,16 +336,16 @@ $(() => {
     })
 
     $('#fourTwo').click(function () {
-        let selection = prompt("The sports conference that the Georgia Bulldogs compete in \n\n A. What is the ACC? \n B. What is the BIG 10? \n C. What is the SEC?\n D. What is the Big East?" )
+        let selection = prompt("The sports conference that the Georgia Bulldogs compete in \n\n A. What is the ACC? \n B. What is the BIG 10? \n C. What is the SEC?\n D. What is the Big East?")
         let finalAnswer = selection.toUpperCase()
         let answer = 'C'
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 400
+            playerScore += 400
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 400
+            playerScore -= 400
         }
 
         $('#fourTwo').prop('disabled', true)
@@ -357,10 +361,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 400
+            playerScore += 400
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 400
+            playerScore -= 400
         }
 
         $('#fourThree').prop('disabled', true)
@@ -376,10 +380,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 400
+            playerScore += 400
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 400
+            playerScore -= 400
         }
 
         $('#fourFour').prop('disabled', true)
@@ -395,10 +399,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 500
+            playerScore += 500
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 500
+            playerScore -= 500
         }
 
         $('#fourFive').prop('disabled', true)
@@ -407,7 +411,7 @@ $(() => {
         updateScore()
     })
 
-    // row five
+    // row five questions
     $('#fiveOne').click(function () {
         let selection = prompt("Established in the 1920's, this historic double-digit highway connected Chicago and Los Angeles  \n\n A. What is Route 20\n B. What is Route 88 \n C. What is Route 66\n D. What is Route 99")
         let finalAnswer = selection.toUpperCase()
@@ -415,10 +419,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 500
+            playerScore += 500
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 500
+            playerScore -= 500
         }
 
         $('#fiveOne').prop('disabled', true)
@@ -434,10 +438,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 500
+            playerScore += 500
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 500
+            playerScore -= 500
         }
 
         $('#fiveTwo').prop('disabled', true)
@@ -453,10 +457,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 500
+            playerScore += 500
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 500
+            playerScore -= 500
         }
 
         $('#fiveThree').prop('disabled', true)
@@ -472,10 +476,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 500
+            playerScore += 500
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 500
+            playerScore -= 500
         }
 
         $('#fiveFour').prop('disabled', true)
@@ -491,10 +495,10 @@ $(() => {
 
         if (answer === finalAnswer) {
             alert("That's CORRECT!")
-            playerOneScore += 500
+            playerScore += 500
         } else {
             alert("Sorry, that's INCORRECT")
-            playerOneScore -= 500
+            playerScore -= 500
         }
 
         $('#fiveFive').prop("disabled", true)
@@ -502,37 +506,29 @@ $(() => {
 
         updateScore()
     })
-  
+
+    // Call winner() after 'Finish' button is clicked
     $('#finishButton').click(function () {
         winner()
     })
-    
-    
-
-    
-
-
 
     // Game restart
     const restartGame = () => {
-        // Reset score for each player
+
+        // Reset scoreboard
         $('#restartButton').click(function () {
-            playerOneScore = 0
+            playerScore = 0
 
             // Enable all question buttons
             $('.questions').prop("disabled", false)
             $('.questions').css("color", "yellow")
             updateScore()
-            
+
         })
-        
+
     }
-   
+
     restartGame()
-   
-
-
-
 
 
 

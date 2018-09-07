@@ -6,44 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <body>
 
-<body>
+        <h1><img src="jeopardy_logo.jpg" alt="jeopardy-logo"></h1>
+        <div class="scoreboard">
+            <h3>Scoreboard</h3>
+            <div id="playerScore"></div>
 
-    <h1><img src="jeopardy_logo.jpg" alt="jeopardy-logo"></h1>
-    <div class="scoreboard">
-        <h3>Scoreboard</h3>
-        <div id="playerOneScore"></div>
-        <br>
- 
-    </div>
+        </div>
 
         <button type="button" id="restartButton">Restart</button>
-   
 
-   
         <table class="gameBoard">
-            <tr class="categories">    
-                <td><button type="button" class="categories" >Automotive</button></td>
-                <td><button type="button" class="categories" >Sports</button></td>
-                <td><button type="button" class="categories" >Geography</button></td>
-                <td><button type="button" class="categories" >Movies</button></td>
-                <td><button type="button" class="categories" >Food</button></td>
-            </tr>    
-           <!-- row one -->
+            <tr class="categories">
+                <td><button type="button" class="categories">Automotive</button></td>
+                <td><button type="button" class="categories">Sports</button></td>
+                <td><button type="button" class="categories">Geography</button></td>
+                <td><button type="button" class="categories">Movies</button></td>
+                <td><button type="button" class="categories">Food</button></td>
+            </tr>
+            <!-- row one questions -->
             <tr>
                 <td><button type="button" class="questions" id="oneOne">100</button></td>
                 <td><button type="button" class="questions" id="oneTwo">100</button></td>
                 <td><button type="button" class="questions" id="oneThree">100</button></td>
                 <td><button type="button" class="questions" id="oneFour">100</button></td>
                 <td><button type="button" class="questions" id="oneFive">100</button></td>
-            </tr>       
-            <!-- row two -->
+            </tr>
+            <!-- row two questions -->
             <tr>
                 <td><button type="button" class="questions" id="twoOne">200</button></td>
                 <td><button type="button" class="questions" id="twoTwo">200</button></td>
@@ -51,7 +45,7 @@
                 <td><button type="button" class="questions" id="twoFour">200</button></td>
                 <td><button type="button" class="questions" id="twoFive">200</button></td>
             </tr>
-            <!-- row three -->
+            <!-- row three questions -->
             <tr>
                 <td><button type="button" class="questions" id="threeOne">300</button></td>
                 <td><button type="button" class="questions" id="threeTwo">300</button></td>
@@ -59,7 +53,7 @@
                 <td><button type="button" class="questions" id="threeFour">300</button></td>
                 <td><button type="button" class="questions" id="threeFive">300</button></td>
             </tr>
-            <!-- row four -->
+            <!-- row four questions -->
             <tr>
                 <td><button type="button" class="questions" id="fourOne">400</button></td>
                 <td><button type="button" class="questions" id="fourTwo">400</button></td>
@@ -67,7 +61,7 @@
                 <td><button type="button" class="questions" id="fourFour">400</button></td>
                 <td><button type="button" class="questions" id="fourFive">400</button></td>
             </tr>
-            <!-- row five -->
+            <!-- row five questions -->
             <tr>
                 <td><button type="button" class="questions" id="fiveOne">500</button></td>
                 <td><button type="button" class="questions" id="fiveTwo">500</button></td>
@@ -78,11 +72,11 @@
         </table>
 
         <div class="footer">
-        <p>*** Once the board is cleared, click the 'Finish' button to see if you've won. Score 2500 points to win. </p>
-        <button type="button" id="finishButton">Finish</button>
+            <p>*** Once the board is cleared, click the 'Finish' button to see if you've won. Score 2500 points to win. </p>
+            <button type="button" id="finishButton">Finish</button>
         </div>
 
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 
 </html>
